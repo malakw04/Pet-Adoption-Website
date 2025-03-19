@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const dateString = now.toLocaleDateString();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('date-time').textContent = `${dateString} ${timeString}`;
+            }
+            setInterval(updateTime, 1000);
+            window.onload = updateTime;
+        </script>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="adoptpet.jpg" alt="Adopt A Pet Logo">
+            </a>
+        </div>
+        <div class="siteName">
+            <h1>Adopt A Pet</h1>
+        </div>
+        <div id="date-time" style="margin-left: auto;"></div>
+    
+    </header>
+    <div class="container">
+        <nav class="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browsePets.html">Browse Available Pets</a></li>
+                <li><a href="findPets.html">Find a dog/cat</a></li>
+                <li><a href="dogCare.html">Dog Care</a></li>
+                <li><a href="catCare.html">Cat Care</a></li>
+                <li><a href="petGiveAway.html">Have a pet to give away</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main class="contentArea">
+            <h2>Dog Care</h2>
+            <p>A dog can be a great addition to any home, but whether you're experienced or a first-time pet parent, it's important to prioritize your dog's health and happiness. Here are some helpful tips:</p>
+
+            <h3>Feeding</h3>
+            <p>
+                Premium-quality dry food provides a well-balanced diet for adult dogs and may be mixed with water, broth or canned food. Your dog may enjoy cottage cheese, cooked egg or fruits and vegetables, but these additions should not total more than ten percent of his daily food intake.
+                Puppies should be fed a high-quality, brand-name puppy food (large breed puppy foods for large breeds). Please limit "people food," however, because it can result in vitamin and mineral imbalances, bone and teeth problems and may cause very picky eating habits and obesity. Clean, fresh water should be available at all times, and be sure to wash food and water dishes frequently.
+            </p>
+
+            <h3>Exercise</h3>
+            <p>Dogs need regular exercise to stay healthy and happy. Play games, take walks, and provide toys to keep them active and entertained.</p>
+
+            <h3>Grooming</h3>
+            <p>Help keep your dog clean and reduce shedding with frequent brushing. Check for fleas and ticks daily during warm weather. Most dogs don't need to be bathed more than a few times a year. Before bathing, comb or cut out all mats from the coat. Carefully rinse all soap out of the coat, or the dirt will stick to soap residue.</p>
+
+            <h3>Handling</h3>
+            <p>To carry a puppy or small dog, place one hand under the dog's chest, with either your forearm or other hand supporting the hind legs and rump. Never attempt to lift or grab your puppy or small dog by the forelegs, tail or back of the neck. If you do have to lift a large dog, lift from the underside, supporting his chest with one arm and his rear end with the other.</p>
+
+            <h3>Housing</h3>
+            <p>Your pet needs a warm, quiet place to rest, away from all drafts and off the floor. A training crate or dog bed is ideal, with a clean blanket or pillow placed inside. Wash the dog's bedding often. If your dog will be spending a lot of time outdoors, be sure she has access to shade and plenty of cool water in hot weather, and a warm, dry, covered shelter when it's cold.</p>
+
+            <h3>Medicines and Poisons</h3>
+            <p>Never give your dog medication that has not been prescribed by a veterinarian. If you suspect that your animal has ingested a poisonous substance, call your veterinarian or the ASPCA Animal Poison Control Center for 24-hour animal poison information at (888) 426- 4435.</p>
+
+            <h3>Dog Supply Checklist</h3>
+            
+            <ul>
+                <li>Quality dog food and treats</li>
+                <li>Food and water bowls</li>
+                <li>Toys, including chew toys</li>
+                <li>Brush and comb</li>
+                <li>Collar with ID tags</li>
+                <li>Leash</li>
+                <li>Carrier (for small dogs)</li>
+                <li>Training crate</li>
+                <li>Dog bed with blanket or towel</li>
+                <li>Dog toothbrush</li>
+            </ul>
+        
+
+            <br>
+            <p>Content sourced from <a href="https://www.aspca.org/pet-care/dog-care/general-dog-care">ASPCA</a>.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Adopt A Pet. <a href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>

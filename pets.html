@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Available Pets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const dateString = now.toLocaleDateString();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('date-time').textContent = `${dateString} ${timeString}`;
+            }
+            setInterval(updateTime, 1000);
+            window.onload = updateTime;
+        </script>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="adoptpet.jpg" alt="Adopt A Pet Logo">
+            </a>
+        </div>
+        <div class="siteName">
+            <h1>Adopt A Pet</h1>
+        </div>
+        <div id="date-time" style="margin-left: auto;"></div>
+    
+    </header>
+
+    <div class="container">
+        <nav class="sideMenu">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="browsePets.html">Browse Available Pets</a></li>
+                <li><a href="findPets.html">Find a dog/cat</a></li>
+                <li><a href="dogCare.html">Dog Care</a></li>
+                <li><a href="catCare.html">Cat Care</a></li>
+                <li><a href="petGiveAway.html">Have a pet to give away</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        
+        <div class="pet-list">
+            <h1>Available Pets for Adoption</h1>
+            <div class="pet1">
+                <img src="pet1.jpg" alt="Pet 1" width = 250 height = 200 >
+                <h2>Buddy</h2>
+                <p>Age: 3 years</p>
+                <p>Breed: Golden Retriever</p>
+                <p>Location: New York</p>
+                <button class="interested-button">Interested</button>
+            </div>
+            <br>
+            <div class="pet2">
+                <img src="pet2.jpg" alt="Pet 2" width = 250 height = 200>
+                <h2>Whiskers</h2>
+                <p>Age: 2 years</p>
+                <p>Breed: Siamese Cat</p>
+                <p>Location: San Francisco</p>
+                <button class="interested-button">Interested</button>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Adopt A Pet. <a href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+
+</body>
+</html>

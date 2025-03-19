@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const dateString = now.toLocaleDateString();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('date-time').textContent = `${dateString} ${timeString}`;
+            }
+            setInterval(updateTime, 1000);
+            window.onload = updateTime;
+        </script>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="adoptpet.jpg" alt="Adopt A Pet Logo">
+            </a>
+        </div>
+        <div class="siteName">
+            <h1>Adopt A Pet</h1>
+        </div>
+        <div id="date-time" style="margin-left: auto;"></div>
+    
+    </header>
+    <div class="container">
+        <nav class="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browsePets.html">Browse Available Pets</a></li>
+                <li><a href="findPets.html">Find a dog/cat</a></li>
+                <li><a href="dogCare.html">Dog Care</a></li>
+                <li><a href="catCare.html">Cat Care</a></li>
+                <li><a href="petGiveAway.html">Have a pet to give away</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main class="contentArea">
+            <h2>Cat Care</h2>
+            <p>Adding a cat to your family is a wonderful experience. Here are some tips to help you take good care of your new friend:</p>
+
+            <h3>Feeding</h3>
+            <p>
+                We recommend purchasing high-quality, brand-name kitten or cat food. Your veterinarian will be able to assess your new cat or kitten and determine the best diet. Factors such as age, activity level and health make a difference in what and how much a cat should eat.
+                Cats require taurine, an essential amino acid, for heart and eye health. The food you choose should be balanced for the life stage of your cat or kitten. Properly balanced foods will contain taurine.
+                You will need to provide fresh, clean water at all times, and wash and refill your cat’s water bowls daily.
+            </p>
+
+            <h3>Grooming</h3>
+            <p>Most cats stay relatively clean and rarely need a bath, but you should brush or comb your cat regularly. Frequent brushing helps keep your cat's coat clean, reduces the amount of shedding and cuts down on the incidence of hairballs.</p>
+
+            <h3>Handling</h3>
+            <p>To pick up your cat, place one hand behind the front legs and another under the hindquarters. Lift gently. Never pick up a cat by the scruff of the neck or by the front legs.</p>
+
+            <h3>Housing</h3>
+            <p>Provide a clean, dry place for your cat to sleep. Keep your cat indoors to protect them from dangers like traffic and predators.</p>
+
+            <h3>Health</h3>
+            <p>TYour cat should see the veterinarian at least once a year for an examination and annual shots, and immediately if she is sick or injured.</p>
+
+            <h3>Medicines and Poisons</h3>
+            <p>Never give your cat medication that has not been prescribed by a veterinarian. If you suspect that your animal has ingested a poisonous substance, call your veterinarian or the ASPCA Animal Poison Control Center for 24-hour animal poison information at (888) 426-4435.</p>
+
+            <h3>Cat Supply Checklist</h3>
+            <ul>
+                <li>Premium-brand cat food</li>
+                <li>Food dish</li>
+                <li>Water bowl</li>
+                <li>Interactive toys</li>
+                <li>Brush</li>
+                <li>Comb</li>
+                <li>Safety collar with ID tag</li>
+                <li>Scratching post or pad</li>
+                <li>Litter box and litter</li>
+                <li>Cat carrier</li>
+                <li>Cat bed or box with warm blanket or towel</li>
+            </ul>
+
+            <br>
+            <p>Content sourced from <a href="https://www.aspca.org/pet-care/cat-care/general-cat-care">ASPCA</a>.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Adopt A Pet. <a href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>

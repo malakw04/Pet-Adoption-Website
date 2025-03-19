@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Adopt A Dog/Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const dateString = now.toLocaleDateString();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('date-time').textContent = `${dateString} ${timeString}`;
+            }
+            setInterval(updateTime, 1000);
+            window.onload = updateTime;
+        </script>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="adoptpet.jpg" alt="Adopt A Pet Logo">
+            </a>
+        </div>
+        <div class="siteName">
+            <h1>Adopt A Pet</h1>
+        </div>
+        <div id="date-time" style="margin-left: auto;"></div>
+    
+    </header>
+    <div class="container">
+        <nav class="sideMenu">
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="browsePets.html">Browse Available Pets</a></li>
+                <li><a href="findPets.html">Find a dog/cat</a></li>
+                <li><a href="dogCare.html">Dog Care</a></li>
+                <li><a href="catCare.html">Cat Care</a></li>
+                <li><a href="petGiveAway.html">Have a pet to give away</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main class="contentArea">
+            <h2>Welcome to Adopt A Pet</h2>
+            <p>At Adopt A Pet, we believe every pet deserves a loving home and every person deserves the joy of a loyal companion. 
+             Our mission is to connect compassionate individuals and families with pets in need, creating homes filled with love and happiness.
+             Whether you're looking to adopt dogs or cats, we will give you all the information you need to pick the perfect pet for you. Browse our available pets, learn about pet care, and find your new best friend today!</p>
+            <p>Thank you for choosing Adopt A Pet!</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Adopt A Pet. <a href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>
+

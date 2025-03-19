@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find a Dog/Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+        function validateFindForm() {
+            let valid = true;
+            let errorMessages = "";
+
+            const Type = document.getElementById('type').value;
+            const Breed = document.getElementById('breed').value;
+            const Age = document.getElementById('age').value;
+            const Gender = document.getElementById('gender').value;
+            const GetsAlong = document.getElementById('gets-along').value;
+            const Suitable = document.getElementById('suitable').value;
+            
+            if (Type === "") {
+                errorMessages += "Please specify a type for the pet.\n";
+                valid = false;
+            }
+            if (Breed === "") {
+                errorMessages += "Please specify a breed for the pet.\n";
+                valid = false;
+            }
+            if (Age === "") {
+                errorMessages += "Please specify an age for the pet.\n";
+                valid = false;
+            }
+            if (Gender === "") {
+                errorMessages += "Please specify a gender for the pet.\n";
+                valid = false;
+            }
+            if (GetsAlong === "") {
+                errorMessages += "Please specify if the pet gets along with others.\n";
+                valid = false;
+            }
+            if (Suitable === "") {
+                errorMessages += "Please specify if the pet is suitable for small children.\n";
+                valid = false;
+            }
+
+            if (!valid) {
+                alert(errorMessage);
+            }
+
+            return valid;
+        }
+    </script>
+    
+    <header>
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const dateString = now.toLocaleDateString();
+                const timeString = now.toLocaleTimeString();
+                document.getElementById('date-time').textContent = `${dateString} ${timeString}`;
+            }
+            setInterval(updateTime, 1000);
+            window.onload = updateTime;
+        </script>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="adoptpet.jpg" alt="Adopt A Pet Logo">
+            </a>
+        </div>
+        <div class="siteName">
+            <h1>Adopt A Pet</h1>
+        </div>
+        <div id="date-time" style="margin-left: auto;"></div>
+    
+    </header>
+    <div class="container">
+        <nav class="sideMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browsePets.html">Browse Available Pets</a></li>
+                <li><a href="findPets.html">Find a dog/cat</a></li>
+                <li><a href="dogCare.html">Dog Care</a></li>
+                <li><a href="catCare.html">Cat Care</a></li>
+                <li><a href="petGiveAway.html">Have a pet to give away</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main class="contentArea">
+            <h2>Find a Dog/Cat</h2>
+            <form action="#" method="post" name="findPetForm" onsubmit="return validateFindForm()">
+                <label for="type">Cat or Dog:</label>
+                <input type="text" id="type" name="type"><br><br>
+                
+                <label for="breed">Breed of Dog or Cat:</label>
+                <input type="text" id="breed" name="breed"><br><br>
+                
+                <label for="age">Age of Animal:</label>
+                <input type="text" id="age" name="age"><br><br>
+                
+                <label for="gender">Animal Gender:</label>
+                <input type="text" id="gender" name="gender"><br><br>
+                
+                <label for="gets-along">Gets Along with Other Dogs/Cats:</label>
+                <input type="text" id="gets-along" name="gets-along"><br><br>
+                
+                <label for="suitable">Suitable for a Family with Small Children:</label>
+                <input type="text" id="suitable" name="suitable"><br><br>
+                
+                <label for="comment">Comment Area:</label>
+                <textarea id="comment" name="comment"></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Adopt A Pet. <a href="privacy.html">Privacy/Disclaimer Statement</a></p>
+    </footer>
+</body>
+</html>

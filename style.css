@@ -1,0 +1,114 @@
+body, h1, h2, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    padding: 10px 20px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+
+header .siteName {
+    margin-left: 20px;
+}
+
+header .siteName h1 {
+    font-size: 24px;
+    color: rgb(155, 94, 105);
+}
+
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.sideMenu {
+    width: 200px;
+    background-color: rgb(138, 203, 171);
+    border-right: 1px solid white;
+}
+
+.sideMenu ul {
+    padding: 10px;
+}
+
+.sideMenu li {
+    margin-bottom: 10px;
+}
+
+.sideMenu a {
+    color: black;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+
+.sideMenu a:hover {
+    background-color: whitesmoke;
+}
+
+
+.contentArea {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(142, 190, 220);
+}
+
+.contentArea h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contentArea p {
+    margin-bottom: 20px;
+}
+
+.contentArea a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.contentArea a:hover{
+    text-decoration: underline;
+}
+
+
+.pet-list{
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(142, 190, 220);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: lightgrey;
+    border-top: 1px solid white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
